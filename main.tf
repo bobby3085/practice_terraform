@@ -20,8 +20,8 @@ data "aws_ami" "ubuntu" {
 
 # this is the important part which defines what we need
 
-resource "aws_instance" "web_server" {  	# "ec2_by_terraform" is the name we are giving to instance,
-						#"aws_instance" means we the resource we need from aws is an instance, we can replace with s3 etc
+resource "aws_instance" "web_server" {  	
+						#"aws_instance" means the resource we need from aws is an instance, we can replace with s3 etc
   ami = data.aws_ami.ubuntu.id 			# we can get ami-xxx number and type t2.micro or t3.micro etc from aws
   instance_type = var.instance_type
   key_name = var.key_name
