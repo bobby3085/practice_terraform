@@ -24,8 +24,7 @@ resource "aws_instance" "web_server" {
 						#"aws_instance" means the resource we need from aws is an instance, we can replace with s3 etc
   ami = data.aws_ami.ubuntu.id 			
   instance_type = var.instance_type
-  key_name = var.key_name
-
+  
   tags = {
     Name = "${var.instance_name}-Instance"	# tags block allows us to apply key-value tags to our EC2 instance for organization and identification
     Environment = "Development"
