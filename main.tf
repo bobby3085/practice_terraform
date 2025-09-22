@@ -20,8 +20,9 @@ data "aws_ami" "ubuntu" {
 
 # this is the important part which defines what we need
 
+
 resource "aws_instance" "web_server" {  	
-						#"aws_instance" means the resource we need from aws is an instance, we can replace with s3 etc
+  count = var.no_of_instances # 
   ami = data.aws_ami.ubuntu.id 			
   instance_type = var.instance_type
   

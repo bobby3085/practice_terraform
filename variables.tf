@@ -13,8 +13,8 @@ variable "instance_type" {
   default = "t2.micro"
 }
 
-variable "key_name" {
-  description = "The name of EC2 instance key pair"
-  type = "string"
-  default = " key_${var.instance.name}"
+variable "no_of_instances" {
+  description = "Enter how many instances needed:"
+  type = number
+  
 }
