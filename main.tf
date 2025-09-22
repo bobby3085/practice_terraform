@@ -22,7 +22,7 @@ data "aws_ami" "ubuntu" {
 
 resource "aws_instance" "web_server" {  	
 						#"aws_instance" means the resource we need from aws is an instance, we can replace with s3 etc
-  ami = data.aws_ami.ubuntu.id 			# we can get ami-xxx number and type t2.micro or t3.micro etc from aws
+  ami = data.aws_ami.ubuntu.id 			
   instance_type = var.instance_type
   key_name = var.key_name
 
