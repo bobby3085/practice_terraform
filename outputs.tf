@@ -1,4 +1,4 @@
-#utput the public ip address of an EC2 instance
+#output the public ip address of an EC2 instance
 
 output "public_ip_count" {
   description = "The total number of public IP addresses"
