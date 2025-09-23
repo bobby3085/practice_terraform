@@ -1,4 +1,4 @@
-My First terraform code to create ec2 instance.\n
+My First terraform code to create ec2 instance.
 Structured terraform code into multiple files ( variables.tf, providers.tf, main.tf, inputs.tf, outputs.tf).
 It is a best practice that improves readability, maintainability, and reusability.
 providers.tf contains information about cloud provider (aws, azure, or GCP) and version.
