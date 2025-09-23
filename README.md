@@ -9,5 +9,5 @@ We should store them in a single working directory.
 terraform combines all .tf files in a working directory into a sngle configuration, so contents of seperate files are treated as a single file.
 terraform paln--> comamnd performs a dry run of infrastructure changes. its just preview. 
 teerrafform apply --> command executes the actions proposed in terraform plan.
-after applying terrafrom autocreates few files like terraform.tfstate, make sure they will not get updated to git by adding them into .gitignore, as they contain sensitive information.
+after applying terrafrom autocreates few files like terraform.tfstate, make sure they will not get committeed to git by adding them into .gitignore, as they contain sensitive information.
 For that we need to create .gitignore
