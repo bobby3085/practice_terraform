@@ -1,6 +1,6 @@
 # My First terraform code to create ec2 instance. 
-Structured terraform code into multiple files ( variables.tf, providers.tf, main.tf, inputs.tf, outputs.tf).
-It is a best practice that improves readability, maintainability, and reusability.
+-Structured terraform code into multiple files ( variables.tf, providers.tf, main.tf, inputs.tf, outputs.tf).
+-It is a best practice that improves readability, maintainability, and reusability.
 providers.tf contains information about cloud provider (aws, azure, or GCP) and version.
 variables.tf is used to declare all input variablesfor configuration. Defining variables here makes code dyanmic and reusable.
 mian.tf contains the primary resource definition for infrastructure. (ex: ec2 instance ami id, type and instance name).
