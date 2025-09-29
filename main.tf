@@ -25,6 +25,7 @@ resource "aws_instance" "web_server" {
   count = var.no_of_instances # 
   ami = data.aws_ami.ubuntu.id 			
   instance_type = var.instance_type
+  key_name = "my_key"
   
   tags = {
     Name = "${var.instance_name}-Instance"	# tags block allows us to apply key-value tags to our EC2 instance for organization and identification
